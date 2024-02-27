@@ -4,7 +4,7 @@ const LargeJsonDownloader = () => {
   const [progress, setProgress] = useState(0);
 
   const downloadJsonFile = async () => {
-    const url = "https://forjson.s3.ap-southeast-2.amazonaws.com/users_100k.json";
+    const url = "https://forjson.s3.ap-southeast-2.amazonaws.com/users_1m.json";
     const response = await fetch(url);
 
     if (!response.ok) {
